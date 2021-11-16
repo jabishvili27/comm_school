@@ -1,0 +1,22 @@
+<button (click)="loadUsers()">click me</button>
+
+<div *ngIf="IsLoadUser">
+  <p *ngIf="oriwami">itvirteba</p>
+  <div *ngIf="!oriwami">
+   
+    <div *ngFor="let item of users">
+      <app-task1
+        [saxeli]="item.firstname"
+        [gvari]="item.lastname"
+        [about]="item.about"
+        [birthday]="item.birthday"
+        [status]="item.status"
+      ></app-task1>
+    </div>
+  </div>
+</div>
+<div *ngIf="!IsLoadUser">
+  <p>list is empty</p>
+</div>
+
+<app-Task2></app-Task2>

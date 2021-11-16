@@ -1,0 +1,14 @@
+.square {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+.task2box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 800px;
+}
+.task2 {
+  font-size: 50px;
+}
